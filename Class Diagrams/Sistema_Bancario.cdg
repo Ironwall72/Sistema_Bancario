@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Sistema_Bancario">
+  <ClassDiagramComponents>
+    <Class name="Cliente" package="" visibility="public" xPosition="41.0" yPosition="15.0">
+      <Fields>
+        <Field name="Id" type="int" visibility="private"/>
+        <Field name="dni" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="direccion" type="String" visibility="private"/>
+        <Field name="cuenta" type="ArrayList" visibility="private"/>
+        <Field name="estado" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cuenta" package="" visibility="public" xPosition="434.0" yPosition="15.0">
+      <Fields>
+        <Field name="numeroCuenta" type="int" visibility="private"/>
+        <Field name="idCliente" type="int" visibility="private"/>
+        <Field name="tipoCuenta" type="ArrayList" visibility="private"/>
+        <Field name="cbu" type="Long" visibility="private"/>
+        <Field name="alias" type="String" visibility="private"/>
+        <Field name="movimientos" type="ArrayList" visibility="private"/>
+        <Field name="estado" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Movimientos" package="" visibility="public" xPosition="99.0" yPosition="281.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="numeroCuenta" type="int" visibility="private"/>
+        <Field name="tipoMovimiento" type="String" visibility="private"/>
+        <Field name="monto" type="double" visibility="private"/>
+        <Field name="estado" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TipoCuenta" package="" visibility="public" xPosition="373.0" yPosition="334.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="tasaCreditoAnual" type="double" visibility="private"/>
+        <Field name="tasaDebitoAnual" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="TipoCuenta" target="Cuenta"/>
+    <IsRelation name="is" source="Movimientos" target="Cuenta"/>
+    <IsRelation name="is" source="Cuenta" target="Cliente"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
