@@ -7,7 +7,6 @@ public class Cliente {
     private String nombre;
     private String apellido;
     private String direccion;
-    private Cuenta cuentas;
     private boolean estado;
 
     public Cliente() {
@@ -19,7 +18,6 @@ public class Cliente {
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
-        this.cuentas = cuentas;
         this.estado = estado;
     }
 
@@ -61,14 +59,6 @@ public class Cliente {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
-    }
-
-    public Cuenta getCuentas() {
-        return cuentas;
-    }
-
-    public void setCuentas(Cuenta cuentas) {
-        this.cuentas = cuentas;
     }
 
     public boolean isEstado() {

@@ -9,7 +9,6 @@
         <Field name="nombre" type="String" visibility="private"/>
         <Field name="apellido" type="String" visibility="private"/>
         <Field name="direccion" type="String" visibility="private"/>
-        <Field name="cuentas" type="Cuenta" visibility="private"/>
         <Field name="estado" type="boolean" visibility="private"/>
       </Fields>
       <Constructors/>
@@ -23,10 +22,9 @@
       <Fields>
         <Field name="numeroCuenta" type="int" visibility="private"/>
         <Field name="idCliente" type="int" visibility="private"/>
-        <Field name="tipocuentas" type="TipoCuenta" visibility="private"/>
+        <Field name="idTipoCuenta" type="int" visibility="private"/>
         <Field name="cbu" type="Long" visibility="private"/>
         <Field name="alias" type="String" visibility="private"/>
-        <Field name="movimientos" type="Movimientos" visibility="private"/>
         <Field name="estado" type="boolean" visibility="private"/>
       </Fields>
       <Constructors/>
