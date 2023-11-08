@@ -9,7 +9,7 @@
         <Field name="nombre" type="String" visibility="private"/>
         <Field name="apellido" type="String" visibility="private"/>
         <Field name="direccion" type="String" visibility="private"/>
-        <Field name="cuenta" type="ArrayList" visibility="private"/>
+        <Field name="cuentas" type="Cuenta" visibility="private"/>
         <Field name="estado" type="boolean" visibility="private"/>
       </Fields>
       <Constructors/>
@@ -23,10 +23,10 @@
       <Fields>
         <Field name="numeroCuenta" type="int" visibility="private"/>
         <Field name="idCliente" type="int" visibility="private"/>
-        <Field name="tipoCuenta" type="ArrayList" visibility="private"/>
+        <Field name="tipocuentas" type="TipoCuenta" visibility="private"/>
         <Field name="cbu" type="Long" visibility="private"/>
         <Field name="alias" type="String" visibility="private"/>
-        <Field name="movimientos" type="ArrayList" visibility="private"/>
+        <Field name="movimientos" type="Movimientos" visibility="private"/>
         <Field name="estado" type="boolean" visibility="private"/>
       </Fields>
       <Constructors/>
@@ -55,8 +55,8 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
+    <IsRelation name="is" source="Cuenta" target="Cliente"/>
     <IsRelation name="is" source="TipoCuenta" target="Cuenta"/>
     <IsRelation name="is" source="Movimientos" target="Cuenta"/>
-    <IsRelation name="is" source="Cuenta" target="Cliente"/>
   </ClassDiagramRelations>
 </ClassDiagram>
