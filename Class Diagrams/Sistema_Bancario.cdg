@@ -13,7 +13,11 @@
         <Field name="estado" type="boolean" visibility="private"/>
       </Fields>
       <Constructors/>
-      <Methods/>
+      <Methods>
+        <Method name="altaCliente" returnType="void" visibility="public"/>
+        <Method name="updateCliente" returnType="void" visibility="public"/>
+        <Method name="bajaCliente" returnType="void" visibility="public"/>
+      </Methods>
     </Class>
     <Class name="Cuenta" package="" visibility="public" xPosition="434.0" yPosition="15.0">
       <Fields>
@@ -28,7 +32,7 @@
       <Constructors/>
       <Methods/>
     </Class>
-    <Class name="Movimientos" package="" visibility="public" xPosition="99.0" yPosition="281.0">
+    <Class name="Movimientos" package="" visibility="public" xPosition="99.0" yPosition="358.0">
       <Fields>
         <Field name="id" type="int" visibility="private"/>
         <Field name="numeroCuenta" type="int" visibility="private"/>
